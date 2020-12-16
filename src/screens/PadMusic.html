@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Pad Music</title>
+		<link rel="stylesheet" type="text/css" href="../../dist/css/styles.css" />
+	</head>
+	<body>
+        <div class="pads">
+            <!-- Les attributs universels data-* forment une classe d'attributs, appelés attributs de données (data attributes). Ils permettent d'échanger des données propriétaire entre le HTML et la représentation du DOM, qu'on peut manipuler avec des scripts. -->
+            <div data-key="KeyA" class="padItem">Q</div>
+            <div data-key="KeyS" class="padItem">S</div>
+            <div data-key="KeyD" class="padItem">D</div>
+            <div data-key="KeyF" class="padItem">F</div>
+            <div data-key="KeyG" class="padItem">G</div>
+            <div data-key="KeyH" class="padItem">H</div>
+            <div data-key=KeyJ" class="padItem">J</div>
+            <div data-key="KeyK" class="padItem">K</div>
+            <div data-key="KeyL" class="padItem">L</div>
+
+            <audio data-key="KeyA" src="../media/audio/Acoustic Snare-04.wav"></audio>
+            <audio data-key="KeyS" src="../media/audio/CYCdh_KesKick-08.wav"></audio>
+            <audio data-key="KeyD" src="../media/audio/CYCdh_LudFlamB-05.wav"></audio>
+            <audio data-key="KeyF" src="../media/audio/CYCdh_MultiCrashLo-01.wav"></audio>
+            <audio data-key="KeyG" src="../media/audio/CYCdh_MultiCrashLo-02.wav"></audio>
+            <audio data-key="KeyH" src="../media/audio/CYCdh_MultiCrashLo-03.wav"></audio>
+            <audio data-key="KeyJ" src="../media/audio/CYCdh_PiccoloA-03.wav"></audio>
+            <audio data-key="KeyK" src="../media/audio/CYCdh_PiccoloD-02.wav"></audio>
+            <audio data-key="KeyL" src="../media/audio/CYCdh_Sab_OpHat-09.wav"></audio>
+        </div>
+        <script src="../js/main.js"></script>
+	</body>
+</html>

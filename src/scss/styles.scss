@@ -1,29 +1,15 @@
 // 01 CONFIG
-@import "../scss/01-config/variables";
 @import "../scss/01-config/mediaqueries";
-@import '../scss/01-config/_transitions';
+
 
 // 02 BASE
 @import "../scss//02-base/reset";
-@import "../scss/02-base/_typography";
-@import "../scss/02-base/grid";
+
 
 // 03 OBJECTS 
-@import "../scss/03-objects/Slider/slider";
-@import "../scss/03-objects/button";
-@import "../scss/03-objects/DropDown/drop-down";
-@import "../scss/03-objects/ContactForm/contact-form";
-@import "../scss/03-objects/Loader/loader";
-@import "../scss/03-objects/Cursor/cursor";
+
 
 // 04 GLOBAL
-@import "../scss/04-globals/header";
-@import "../scss/04-globals/_footer";
+@import "../scss/04-globals/PadMusic/padmusic";
 
-@import "../scss//04-globals/HeroHeader/HeroHeader";
-@import "../scss/04-globals/HeroHeader/sub-hero-header";
-@import "../scss/04-globals/Section-CrossChannel/_Section-CrossChannel";
-@import "../scss/04-globals/Section-Features/_Section-Features";
-@import "../scss/04-globals/Section-Contact/contact-section";
-@import "../scss/04-globals/Section-Slider/Section_Slider";
 

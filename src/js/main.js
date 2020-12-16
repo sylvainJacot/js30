@@ -4,4 +4,4 @@ function callAll(jsfiles) {
   src.setAttribute("src", jsfiles);
   document.getElementsByTagName("body")[0].appendChild(src);
 }
-callAll("");
+callAll("../js/padmusic.js");

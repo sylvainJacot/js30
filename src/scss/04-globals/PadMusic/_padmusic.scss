@@ -1,0 +1,32 @@
+.pads {
+    width: 100vw;
+    height: 100vh;
+    background-color: #2d2730;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .padItem {
+        background: rgb(79,77,88);
+        background: radial-gradient(circle, rgb(79, 78, 85) 0%, rgb(47, 48, 52) 100%);
+        border-radius: 2rem;
+        border: 1px solid rgb(47, 48, 52);
+        width:10rem;
+        height:10rem;
+        margin:20px;
+        color:rgb(172, 172, 172);
+        box-shadow: 5px 5px 10px rgba(23, 22, 22, 0.3), -5px -5px 10px rgba(85, 84, 84, 0.3);
+        transform: scale(1);
+        transition: all .1s;
+        font-size: 2rem;
+        font-family:Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .playing{
+        background: radial-gradient(circle, rgb(162, 208, 225) 0%, rgb(48, 70, 159) 100%);
+        box-shadow: 5px 5px 10px rgba(48, 70, 159,.8), -5px -5px 10px rgba(48, 70, 159,.8);
+        border: 1px solid rgba(48, 70, 159,.8);
+        transform: scale(1.01);
+    }
+}
