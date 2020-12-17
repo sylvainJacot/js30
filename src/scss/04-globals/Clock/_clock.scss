@@ -48,6 +48,17 @@
             }
             .hand_hour {
                 position: absolute;
+                width: 35%;
+                height: .5rem;
+                background-color: white;
+                right: 50%;
+                transform-origin: 100% center;
+                border-radius: 1rem ;
+                transform: rotate(90deg);
+                transition: all .4s cubic-bezier(.83,-0.07,1,2.11)
+            }
+            .hand_minutes {
+                position: absolute;
                 width: 40%;
                 height: .5rem;
                 background-color: white;
@@ -55,16 +66,7 @@
                 transform-origin: 100% center;
                 border-radius: 1rem ;
                 transform: rotate(90deg);
-            }
-            .hand_minutes {
-                position: absolute;
-                width: 35%;
-                height: .5rem;
-                background-color: white;
-                right: 50%;
-                transform-origin: 100% center;
-                border-radius: 1rem ;
-                transform: rotate(0deg);
+                transition: all .4s cubic-bezier(.83,-0.07,1,2.11)
             }
             .hand_seconds{
                 position: absolute;
@@ -74,8 +76,9 @@
                 right: 50%;
                 transform-origin: 100% center;
                 border-radius: 1rem ;
-                transform: rotate(60deg);
+                transform: rotate(90deg);
                 z-index: 1;
+                transition: all .4s cubic-bezier(.83,-0.07,1,2.11)
             }
             .clock_lines{
                 width: 95%;
