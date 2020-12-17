@@ -22,11 +22,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
     }
     .playing{
         background: radial-gradient(circle, rgb(162, 208, 225) 0%, rgb(48, 70, 159) 100%);
         box-shadow: 5px 5px 10px rgba(48, 70, 159,.8), -5px -5px 10px rgba(48, 70, 159,.8);
         border: 1px solid rgba(48, 70, 159,.8);
         transform: scale(1.01);
+    }
+    .play_button{
+        background-color: wheat;
+        position: absolute;
+        padding: 2rem;
+        top: 80%;
     }
 }
