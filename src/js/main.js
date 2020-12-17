@@ -5,3 +5,4 @@ function callAll(jsfiles) {
   document.getElementsByTagName("body")[0].appendChild(src);
 }
 callAll("../js/padmusic.js");
+callAll("../js/clock.js");

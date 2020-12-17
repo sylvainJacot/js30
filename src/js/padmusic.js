@@ -3,15 +3,16 @@
 //   };
 //   window.addEventListener("keydown", KeyDownHandler(e));
 
-window.addEventListener("keydown", function (e) {
+function playSound(e) {
   const audio = document.querySelector(`audio[data-key="${e.code}"]`);
   const key = document.querySelector(`.padItem[data-key="${e.code}"]`);
   if (!audio) return; // stop the function from running all together
   audio.currentTime = 0; // rewind to the start
   audio.play();
   key.classList.add("playing");
-});
+}
 
+window.addEventListener("keydown", playSound);
 
 function removeTransition(e) {
   if (e.propertyName !== "transform") return;
