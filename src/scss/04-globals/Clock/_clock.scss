@@ -31,7 +31,9 @@
             width: 100%;
             height: 100%;
             position: relative;
-
+            display: flex;
+            justify-content: center;
+            align-items: center;
             .barrel {
             position: absolute;
             width: 2rem;
@@ -42,6 +44,92 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
+            z-index: 5;
+            }
+            .hand_hour {
+                position: absolute;
+                width: 40%;
+                height: .5rem;
+                background-color: white;
+                right: 50%;
+                transform-origin: 100% center;
+                border-radius: 1rem ;
+                transform: rotate(90deg);
+            }
+            .hand_minutes {
+                position: absolute;
+                width: 35%;
+                height: .5rem;
+                background-color: white;
+                right: 50%;
+                transform-origin: 100% center;
+                border-radius: 1rem ;
+                transform: rotate(0deg);
+            }
+            .hand_seconds{
+                position: absolute;
+                width: 48%;
+                height: .5rem;
+                background-color: rgb(251, 30, 81);
+                right: 50%;
+                transform-origin: 100% center;
+                border-radius: 1rem ;
+                transform: rotate(60deg);
+                z-index: 1;
+            }
+            .clock_lines{
+                width: 95%;
+                height: 95%;
+                position: relative;
+                opacity: .5;
+                .hour_line{
+                    display: block;
+                    position: absolute;
+                    height: 1.5rem;
+                    width: 0.5rem;
+                    background-color: white;
+                    left: 50%;
+                    transform: translateX(-50%) rotate(90deg) ;
+                    transform-origin: 0.25rem calc(((36rem / 2) / 100) * 95);
+                    
+                }
+                #h12 {
+                    transform: translateX(-50%) rotate(0deg) ;
+                }
+                #h01 {
+                    transform: translateX(-50%) rotate(30deg) ;
+                }
+                #h02 {
+                    transform: translateX(-50%) rotate(60deg) ;
+                }
+                #h03 {
+                    transform: translateX(-50%) rotate(90deg) ;
+                }
+                #h04 {
+                    transform: translateX(-50%) rotate(120deg) ;
+                }
+                #h05 {
+                    transform: translateX(-50%) rotate(150deg) ;
+                }
+                #h06 {
+                    transform: translateX(-50%) rotate(180deg) ;
+                }
+                #h07 {
+                    transform: translateX(-50%) rotate(210deg) ;
+                }
+                #h08 {
+                    transform: translateX(-50%) rotate(240deg) ;
+                }
+                #h09 {
+                    transform: translateX(-50%) rotate(270deg) ;
+                }
+                #h10 {
+                    transform: translateX(-50%) rotate(300deg) ;
+                }
+                #h11 {
+                    transform: translateX(-50%) rotate(330deg) ;
+                }
+
             }
         }
     }
