@@ -1,0 +1,12 @@
+$padding: 1rem;
+$color: #f08080;
+$border: 0rem;
+
+// To make Sass (or, specifically, SCSS in this case) variables available to JavaScript, we need to “export” them.
+// Then we import the Sass file file into JavaScript, giving us access to the variables defined in the file.
+
+:export {
+    padding: $padding;
+    color: $color;
+    border: $border;
+}
