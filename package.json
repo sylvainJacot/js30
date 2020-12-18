@@ -4,18 +4,21 @@
 	"description": "",
 	"main": "index.html",
 	"scripts": {
-		"serve": "browser-sync start --server --files 'dist/css/*.css, **/*.html'",
-		"scss": "node-sass --output-style compressed -o dist/css src/scss",
-		"watch:css": "onchange 'src/scss' -- npm run scss",
-		"start": "run-p serve watch:css"
+		"start": "webpack-dev-server --open --node development --config webpack.config.js",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "webpack --mode production"
 	},
 	"author": "JS",
 	"license": "ISC",
 	"dependencies": {},
 	"devDependencies": {
-		"browser-sync": "^2.26.13",
-		"node-sass": "^4.14.1",
-		"npm-run-all": "^4.1.5",
-		"onchange": "^6.1.0"
+		"css-loader": "^5.0.1",
+		"html-webpack-plugin": "^4.5.0",
+		"node-sass": "^5.0.0",
+		"sass-loader": "^10.1.0",
+		"style-loader": "^2.0.0",
+		"webpack": "^5.11.0",
+		"webpack-cli": "^4.2.0",
+		"webpack-dev-server": "^3.1.4"
 	}
 }
