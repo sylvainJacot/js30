@@ -1,17 +1,20 @@
 .sticky_nav{
     width: 100%;
     height: 100%;
-    header{
+
+    .hero_section{
         width: 100%;
-        height: 100%;
-        .hero_section{
-            width: 100%;
-            height: 70rem;
-            background-color: aquamarine;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+        height: 70rem;
+        background-color: aquamarine;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header{
+        position: relative;
+        width: 100%;
+        top: unset;
         .navigation{
             width: 100%;
             height: 12rem;
@@ -19,6 +22,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
             .logo_main{
                 width: 10rem;
                 height: 10rem;
@@ -52,10 +56,8 @@
 .fix_header {
     .sticky_nav{
     header{
-        .navigation{
-            position: fixed;
-            // top: 0;
-        }
+        position: fixed;
+        top: 0;
     }
 }
 }

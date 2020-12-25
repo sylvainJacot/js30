@@ -1,10 +1,9 @@
-const nav = document.querySelector("#navigation");
+const header = document.querySelector("#header");
+const topOfNav = header.offsetTop;
 
 function fixNav() {
-  const topOfNav = nav.offsetTop;
-
   if (window.scrollY >= topOfNav) {
-    document.body.style.paddingTop = nav.offsetHeight + "px";
+    document.body.style.paddingTop = header.offsetHeight + "px";
     document.body.classList.add("fix_header");
   } else {
     document.body.style.paddingTop = 0;
